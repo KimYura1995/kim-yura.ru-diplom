@@ -13,8 +13,8 @@
   <body>
     <header class="header">
       <div class="container header__container">
+        <button class="menu-nav__btn" id="nav-btn" type="button" aria-label="Навигация сайта"></button>
         <nav class="menu-nav">
-          <button class="menu-nav__btn" id="nav-btn" type="button" aria-label="Навигация сайта"></button>
           <ul class="menu-nav__list">
             <li class="menu-item menu-nav__item">
               <a class="menu-item__link" href="#ability">Услуги</a>
@@ -28,7 +28,7 @@
           </ul>
         </nav>
         <div class="header__right-block">
-          <a class="header__right-tel" href="tel:+78005553535">+7 (800) 555-35-35</a>
+          <a class="header__right-tel" href="tel:+78005553535">+7 (499) 995-55-77</a>
           <button class="header__btn form-call" type="button">Заказать звонок</button>
           <button class="header__btn-mob form-call" type="button" aria-label="Заказать звонок"><i class="fas fa-phone fa-xs fa-flip-horizontal header__btn-phone"></i></button>
         </div>
@@ -49,61 +49,61 @@
     </header>
     <main class="main">
       <section class="about-me">
-        <div class="backgrounds-icons about-me__backgrounds-icons">
-          <div class="backgrounds-icons__item backgrounds-icons__item_color_gradient backgrounds-icons__item_start_position backgrounds-icons__item_property_1">{&nbsp;}</div>
-          <div class="backgrounds-icons__item backgrounds-icons__item_color_gradient backgrounds-icons__item_start_position backgrounds-icons__item_property_2">&lt;div&gt;</div>
-          <div class="backgrounds-icons__item backgrounds-icons__item_color_gradient backgrounds-icons__item_start_position backgrounds-icons__item_property_3">&lt;div&gt;</div>
-          <div class="backgrounds-icons__item backgrounds-icons__item_color_gradient backgrounds-icons__item_start_position backgrounds-icons__item_property_4">#</div>
-          <div class="backgrounds-icons__item backgrounds-icons__item_color_gradient backgrounds-icons__item_start_position backgrounds-icons__item_property_5">&lt;/&gt;</div>
-        </div>
         <div class="about-me__container container container-mob">
           <div class="about-me__info">
             <h1 class="about-me__name">Дмитрий Алексеев</h1>
-            <div class="about-me__professions">
+            <p class="about-me__professions">
               Frontend-разработчик и веб-верстальщик
-            </div>
+            </p>
             <a class="about-me__btn btn-color-orange" href="#ability" aria-label="Узнать больше обо мне">Узнать больше</a>
           </div>
-          <div class="about-me__img-container">
-            <img class="about-me__img" src="img/contents/photo.png" alt="Моя фотография">
+          <img class="about-me__img" src="img/contents/photo.png" alt="Моя фотография">
+          <div class="backgrounds-icons about-me__backgrounds-icons">
+            <div class="backgrounds-icons__item backgrounds-icons__item_color_gradient backgrounds-icons__item_start_position backgrounds-icons__item_property_1">{&nbsp;}</div>
+            <div class="backgrounds-icons__item backgrounds-icons__item_color_gradient backgrounds-icons__item_start_position backgrounds-icons__item_property_2">&lt;div&gt;</div>
+            <div class="backgrounds-icons__item backgrounds-icons__item_color_gradient backgrounds-icons__item_start_position backgrounds-icons__item_property_3">&lt;div&gt;</div>
+            <div class="backgrounds-icons__item backgrounds-icons__item_color_gradient backgrounds-icons__item_start_position backgrounds-icons__item_property_4">#</div>
+            <div class="backgrounds-icons__item backgrounds-icons__item_color_gradient backgrounds-icons__item_start_position backgrounds-icons__item_property_5">&lt;/&gt;</div>
           </div>
         </div>
       </section>
-      <section class="ability main__ability container" id="ability">
-        <h2 class="title ability__title">
-          Что я делаю
-        </h2>
-        <div class="article-container ability__article-container">
-          <div class="ability__row">
-            <article class="ability-container__article">
-              <img class="ability-container__img" src="img/icons/ability_pc.png" alt="Вёрстка лендинг–страниц и сайтов любой сложности">
-              <h4 class="ability-container__description">
-                Вёрстка лендинг–страниц и сайтов любой сложности
-              </h4>
-            </article>
-            <article class="ability-container__article">
-              <img class="ability-container__img" src="img/icons/ability_mob.png" alt="Адаптивная вёрстка под все браузеры и устройства">
-              <h4 class="ability-container__description">
-                Адаптивная вёрстка под все браузеры и устройства
-              </h4>
-            </article>
+      <section class="ability main__ability" id="ability">
+        <div class="container">
+          <h2 class="title ability__title">
+            Что я делаю
+          </h2>
+          <div class="article-container ability__article-container">
+            <div class="ability__row">
+              <article class="ability-container__article">
+                <img class="ability-container__img" src="img/icons/ability_pc.png" alt="Вёрстка лендинг–страниц и сайтов любой сложности">
+                <h4 class="ability-container__description">
+                  Вёрстка лендинг–страниц и сайтов любой сложности
+                </h4>
+              </article>
+              <article class="ability-container__article">
+                <img class="ability-container__img" src="img/icons/ability_mob.png" alt="Адаптивная вёрстка под все браузеры и устройства">
+                <h4 class="ability-container__description">
+                  Адаптивная вёрстка под все браузеры и устройства
+                </h4>
+              </article>
+            </div>
+            <div class="ability__row">
+              <article class="ability-container__article">
+                <img class="ability-container__img" src="img/icons/ability_programming.png" alt="Frontend–разработка и программирование">
+                <h4 class="ability-container__description">
+                  Frontend–разработка и программирование
+                </h4>
+              </article>
+              <article class="ability-container__article">
+                <img class="ability-container__img" src="img/icons/ability_coding.png" alt="Исправление и доработка существующей вёрстки">
+                <h4 class="ability-container__description">
+                  Исправление и доработка существующей вёрстки
+                </h4>
+              </article>
+            </div>
           </div>
-          <div class="ability__row">
-            <article class="ability-container__article">
-              <img class="ability-container__img" src="img/icons/ability_programming.png" alt="Frontend–разработка и программирование">
-              <h4 class="ability-container__description">
-                Frontend–разработка и программирование
-              </h4>
-            </article>
-            <article class="ability-container__article">
-              <img class="ability-container__img" src="img/icons/ability_coding.png" alt="Исправление и доработка существующей вёрстки">
-              <h4 class="ability-container__description">
-                Исправление и доработка существующей вёрстки
-              </h4>
-            </article>
-          </div>
+          <button class="ability__btn btn-color-orange form-call" type="button">Узнать стоимость</button>
         </div>
-        <button class="ability__btn btn-color-orange form-call" type="button">Узнать стоимость</button>
       </section>
       <section class="examples main__examples" id="examples">
         <h2 class="title examples__title">
@@ -133,13 +133,6 @@
       </section>
       <section class="cost-service main__cost-service" id="cost">
         <div class="container">
-          <div class="backgrounds-icons about-me__backgrounds-icons">
-            <div class="backgrounds-icons__item backgrounds-icons__item_color_white backgrounds-icons__item_start_position backgrounds-icons__item_property_6">{&nbsp;}</div>
-            <div class="backgrounds-icons__item backgrounds-icons__item_color_white backgrounds-icons__item_start_position backgrounds-icons__item_property_7">{&nbsp;}</div>
-            <div class="backgrounds-icons__item backgrounds-icons__item_color_white backgrounds-icons__item_start_position backgrounds-icons__item_property_8">&lt;div&gt;</div>
-            <div class="backgrounds-icons__item backgrounds-icons__item_color_white backgrounds-icons__item_start_position backgrounds-icons__item_property_9">#</div>
-            <div class="backgrounds-icons__item backgrounds-icons__item_color_white backgrounds-icons__item_start_position backgrounds-icons__item_property_10">&lt;/&gt;</div>
-          </div>
           <div class="cost-service__container">
             <h3 class="cost-service__description">
               Адаптивная вёрстка под все устройства и&nbsp;браузеры от 1000 рублей всего за 4 часа.*
@@ -147,6 +140,13 @@
             <p class="cost-service__note">
               <span class="cost-service__symbol">* </span>Срок и стоимость могут отличаться от заявленных и рассчитываются индивидуально, в&nbsp;зависимости от&nbsp;сложности задач.
             </p>
+          </div>
+          <div class="backgrounds-icons about-me__backgrounds-icons">
+            <div class="backgrounds-icons__item backgrounds-icons__item_color_white backgrounds-icons__item_start_position backgrounds-icons__item_property_6">{&nbsp;}</div>
+            <div class="backgrounds-icons__item backgrounds-icons__item_color_white backgrounds-icons__item_start_position backgrounds-icons__item_property_7">{&nbsp;}</div>
+            <div class="backgrounds-icons__item backgrounds-icons__item_color_white backgrounds-icons__item_start_position backgrounds-icons__item_property_8">&lt;div&gt;</div>
+            <div class="backgrounds-icons__item backgrounds-icons__item_color_white backgrounds-icons__item_start_position backgrounds-icons__item_property_9">#</div>
+            <div class="backgrounds-icons__item backgrounds-icons__item_color_white backgrounds-icons__item_start_position backgrounds-icons__item_property_10">&lt;/&gt;</div>
           </div>
         </div>
       </section>
