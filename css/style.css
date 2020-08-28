@@ -247,6 +247,8 @@ button {
   position: relative;
   background: url(../img/contents/figure.svg) 1100px 60px no-repeat;
   overflow: hidden;
+  -webkit-transition: background-position 1s;
+  -o-transition: background-position 1s;
   transition: background-position 1s;
 }
 
@@ -258,12 +260,16 @@ button {
   display: flex;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .about-me__info {
   position: relative;
-  transform: translateY(-12px);
+  -webkit-transform: translateY(-12px);
+      -ms-transform: translateY(-12px);
+          transform: translateY(-12px);
   z-index: 2;
 }
 
@@ -284,15 +290,21 @@ button {
 }
 
 .about-me__img {
-  align-self: flex-end;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
   height: 629px;
   margin-left: auto;
   -webkit-filter: drop-shadow(5px 0 10px rgba(0, 0, 0, .2));
           filter: drop-shadow(5px 0 10px rgba(0, 0, 0, .2));
   -webkit-transition: transform .5s linear;
   -o-transition: transform .5s linear;
+  -webkit-transition: -webkit-transform .5s linear;
+  transition: -webkit-transform .5s linear;
   transition: transform .5s linear;
-  transform: translateX(80px);
+  transition: transform .5s linear, -webkit-transform .5s linear;
+  -webkit-transform: translateX(80px);
+      -ms-transform: translateX(80px);
+          transform: translateX(80px);
   z-index: 2;
 }
 
@@ -838,7 +850,9 @@ button {
   }
 
   .about-me__img {
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0);
   }
 }
 
@@ -860,7 +874,9 @@ button {
   }
 
   .about-me__info {
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+            transform: translateY(0);
   }
 
   .about-me__name {
@@ -1013,10 +1029,15 @@ button {
 
   .about-me__container {
     padding: 0 0;
-    justify-content: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 
   .about-me__info {
