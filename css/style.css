@@ -425,7 +425,7 @@ button {
 
 .main__ability {
   position: relative;
-  padding-top: 90px;
+  padding-top: 88px;
   padding-bottom: 100px;
   text-align: center;
   background-color: white;
@@ -435,12 +435,12 @@ button {
   font-size: 54px;
 }
 
-.ability__article-container {
-  margin-top: 100px;
+.ability__article-list {
+  margin-top: 87px;
   margin-bottom: 90px;
 }
 
-.article-container {
+.article-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -448,47 +448,48 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.ability__row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-}
-
-.ability__row:nth-child(2n-1) {
-  margin-right: 43px;
-}
-
-.ability-container__article {
-  max-width: 260px;
-}
-
-.ability-container__article:not(:last-child) {
-  margin-right: 43px;
-}
-
-.ability-container__img {
-  margin-bottom: 20px;
-}
-
-.ability-container__description {
-  color: #8993ad;
+.ability-list__item {
+  padding-top: 90px;
   font-size: 20px;
   line-height: 30px;
-  font-weight: 400;
+  color: #8993ad;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 15%;
+          flex: 1 0 15%
+}
+
+.ability-list__item:not(:last-child) {
+  margin-right: 16px;
+}
+
+.ability-landing {
+  background: url(../img/icons/ability_pc.png) center top no-repeat;
+}
+
+.ability-adaptive {
+  background: url(../img/icons/ability_mob.png) center top no-repeat;
+  -webkit-box-flex: 2;
+      -ms-flex: 2 0 15%;
+          flex: 2 0 15%
+}
+
+.ability-frontend {
+  background: url(../img/icons/ability_programming.png) center top no-repeat;
+}
+
+.ability-correction {
+  background: url(../img/icons/ability_coding.png) center top no-repeat;
 }
 
 .ability__btn {
-  padding: 20px 60px;
+  padding: 18px 59px;
 }
 
 .main__examples {
@@ -944,47 +945,10 @@ button {
             transform: scale(2) rotate(20deg);
   }
 
-  .ability-container__article {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-  }
-
-  .ability__row {
-    width: 100%;
-  }
-
-  .ability__row:not(:last-child) {
-    margin-bottom: 80px;
-  }
-
-  .ability__row:nth-child(2n-1) {
-    margin-right: 0;
-  }
-
   .article-container {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     padding: 0 90px;
-  }
-
-  .ability-container__article:not(:nth-last-of-type(-n+2)){
-    margin-bottom: 80px;
-  }
-
-  .ability-container__article:not(:last-child) {
-    margin-right: 0;
-  }
-
-  .ability-container__article:nth-child(2n+1) {
-    margin-right: auto;
-  }
-
-  .ability-container__description {
-    font-size: 20px;
   }
 
   .examples__btn {
@@ -1085,39 +1049,10 @@ button {
     font-size: 30px;
   }
 
-  .ability__row {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    width: 100%;
-  }
-
-  .ability__row:not(:last-child) {
-    margin-bottom: 50px;
-  }
-
-  .ability-container__article {
-    max-width: 100%;
-  }
-
-  .ability-container__article:not(:last-child) {
-    margin-bottom: 50px;
-  }
-
   .article-container {
     padding: 0;
     margin-top: 40px;
     margin-bottom: 50px;
-  }
-
-  .ability-container__article:not(:last-child) {
-    margin-right: 0;
-  }
-
-  .ability-container__description {
-    font-size: 16px;
-    line-height: 24px;
   }
 
   .backgrounds-icons__item_property_1 {
