@@ -61,7 +61,7 @@ $(function() {
     slidesToShow: 3,
     slidesToScroll: 1,
     prevArrow: '<button class="slider-btn slider-btn-prev" type="button" aria-label="Слайдер влево"></button>',
-    nextArrow: '<button class="slider-btn slider-btn-next" type="button" aria-label="Слайдер влево"></button>',
+    nextArrow: '<button class="slider-btn slider-btn-next" type="button" aria-label="Слайдер вправо"></button>',
     responsive: [
       {
         breakpoint: 1200,

@@ -28,7 +28,7 @@
           </ul>
         </nav>
         <div class="header__right-block">
-          <a class="header__right-tel" href="tel:+78005553535">+7 (499) 995-55-77</a>
+          <a class="header__right-tel" href="tel:+74999957755">+7 (499) 995-55-77</a>
           <button class="header__btn form-call" type="button">Заказать звонок</button>
           <button class="header__btn-mob form-call" type="button" aria-label="Заказать звонок"><i class="fas fa-phone fa-xs fa-flip-horizontal header__btn-phone"></i></button>
         </div>
@@ -95,36 +95,34 @@
         </h2>
         <div class="container">
           <div class="slider-example examples__slider-example">
-            <div class="slider-examples__item">
+            <figure class="slider-examples__item">
               <img class="slider-examples__img" src="img/contents/example_1.jpg" alt="Сайт психолога Веры Антоновой">
-              <p class="slider-examples__name">Сайт психолога Веры Антоновой</p>
-            </div>
-            <div class="slider-examples__item">
+              <figcaption class="slider-examples__name">Сайт психолога Веры Антоновой</figcaption>
+            </figure>
+            <figure class="slider-examples__item">
               <img class="slider-examples__img" src="img/contents/example_2.jpg" alt="Сайт магазина детской одежды">
-              <p class="slider-examples__name">Сайт магазина детской одежды</p>
-            </div>
-            <div class="slider-examples__item">
+              <figcaption class="slider-examples__name">Сайт магазина детской одежды</figcaption>
+            </figure>
+            <figure class="slider-examples__item">
               <img class="slider-examples__img" src="img/contents/example_3.jpg" alt="Сайт магазина Рыболов">
-              <p class="slider-examples__name">Сайт магазина "Рыболов"</p>
-            </div>
-            <div class="slider-examples__item">
+              <figcaption class="slider-examples__name">Сайт магазина "Рыболов"</figcaption>
+            </figure>
+            <figure class="slider-examples__item">
               <img class="slider-examples__img" src="img/contents/example_4.jpg" alt="Сайт новостного агенства">
-              <p class="slider-examples__name">Сайт новостного агенства</p>
-            </div>
+              <figcaption class="slider-examples__name">Сайт новостного агенства</figcaption>
+            </figure>
           </div>
           <button class="examples__btn btn-color-orange form-call" type="button">Заказать проект</button>
         </div> 
       </section>
       <section class="cost-service main__cost-service" id="cost">
-        <div class="container">
-          <div class="cost-service__container">
-            <h3 class="cost-service__description">
-              Адаптивная вёрстка под все устройства и&nbsp;браузеры от 1000 рублей всего за 4 часа.*
-            </h3>
-            <p class="cost-service__note">
-              <span class="cost-service__symbol">* </span>Срок и стоимость могут отличаться от заявленных и рассчитываются индивидуально, в&nbsp;зависимости от&nbsp;сложности задач.
-            </p>
-          </div>
+        <div class="container cost-service__container">
+          <h3 class="cost-service__description">
+            Адаптивная вёрстка под все устройства и&nbsp;браузеры от 1000 рублей всего за 4 часа.*
+          </h3>
+          <p class="cost-service__note">
+            Срок и стоимость могут отличаться от заявленных и рассчитываются индивидуально, в&nbsp;зависимости от&nbsp;сложности задач.
+          </p>
           <div class="backgrounds-icons about-me__backgrounds-icons">
             <div class="backgrounds-icons__item backgrounds-icons__item_color_white backgrounds-icons__item_start_position backgrounds-icons__item_property_6">{&nbsp;}</div>
             <div class="backgrounds-icons__item backgrounds-icons__item_color_white backgrounds-icons__item_start_position backgrounds-icons__item_property_7">{&nbsp;}</div>
@@ -159,7 +157,7 @@
     <footer class="footer">
       <div class="footer__top">
         <div class="footer__container container">
-          <div class="footer-left-column footer__left">
+          <nav class="footer-left-column footer__left">
             <ul class="footer-left-column__list">
               <li class="footer-left-column__item">
                 <a class="footer-left-column__link" href="#ability">Услуги</a>
@@ -171,25 +169,33 @@
                 <a class="footer-left-column__link" href="#cost">Стоимость</a>
               </li>
             </ul>
-          </div>
-          <div class="footer-middle-column footer__middle">
-            <div class="footer-middle-column__tel">
+          </nav>
+          <ul class="footer-middle-column footer__middle">
+            <li class="footer-middle-column__tel">
               <i class="fas fa-phone fa-lg fa-flip-horizontal footer-middle-column__tel-icon"></i>
-              <a class="footer-middle-column__tel-link" href="tel:+78005553535">+7 (800) 555-35-35</a>
-            </div>
-            <div class="footer-middle-column__mail">
+              <a class="footer-middle-column__tel-link" href="tel:+74999957755">+7 (499) 995-77-55</a>
+            </li>
+            <li class="footer-middle-column__mail">
               <i class="fas fa-lg fa-envelope footer-middle-column__mail-icon"></i>
               <a class="footer-middle-column__mail-link" href="mailto:dmitry@alekseev.com">dmitry@alekseev.com</a>
-            </div>
-          </div>
+            </li>
+          </ul>
           <div class="footer-right-column footer__right">
             <button class="footer-right-column__btn form-call" type="button">Заказать звонок</button>
-            <div class="footer-right-column__social">
-              <a class="social-link footer-right-column__vk-link" href="#" aria-label="VK Messanger"></a>
-              <a class="social-link footer-right-column__fb-link" href="#" aria-label="Facebook"></a>
-              <a class="social-link footer-right-column__tw-link" href="#" aria-label="Twitter"></a>
-              <a class="social-link footer-right-column__inst-link" href="#" aria-label="Instagram"></a>
-            </div>
+            <ul class="footer-right-column__social">
+              <li class="footer-right-column__item">
+                <a class="social-link footer-right-column__vk-link" href="#" aria-label="VK Messanger"></a>
+              </li>
+              <li class="footer-right-column__item">
+                <a class="social-link footer-right-column__fb-link" href="#" aria-label="Facebook"></a>
+              </li>
+              <li class="footer-right-column__item">
+                <a class="social-link footer-right-column__tw-link" href="#" aria-label="Twitter"></a>
+              </li>
+              <li class="footer-right-column__item">
+                <a class="social-link footer-right-column__inst-link" href="#" aria-label="Instagram"></a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>

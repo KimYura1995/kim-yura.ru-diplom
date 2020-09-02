@@ -43,7 +43,8 @@ h1,
 h2,
 h3,
 h4,
-p {
+p,
+figure {
   margin: 0;
 }
 
@@ -245,7 +246,7 @@ button {
 .about-me {
   height: 693px;
   position: relative;
-  background: url(../img/contents/figure.svg) 1100px 60px no-repeat;
+  background: url(../img/contents/figure.svg) 1080px 60px no-repeat;
   overflow: hidden;
   -webkit-transition: background-position 1s;
   -o-transition: background-position 1s;
@@ -376,47 +377,6 @@ button {
   color: white;
 }
 
-.backgrounds-icons__item_property_6 {
-  top: 50px;
-  left: 140px;
-  -webkit-transform: scale(2.5) rotate(30deg);
-      -ms-transform: scale(2.5) rotate(30deg);
-          transform: scale(2.5) rotate(30deg);
-}
-
-.backgrounds-icons__item_property_7 {
-  top: 300px;
-  left: 1500px;
-  -webkit-transform: scale(2.5) rotate(-20deg);
-      -ms-transform: scale(2.5) rotate(-20deg);
-          transform: scale(2.5) rotate(-20deg);
-}
-
-.backgrounds-icons__item_property_8 {
-  top: 320px;
-  left: 1200px;
-  -webkit-transform: scale(2) rotate(20deg);
-      -ms-transform: scale(2) rotate(20deg);
-          transform: scale(2) rotate(20deg);
-}
-
-.backgrounds-icons__item_property_9 {
-  top: 300px;
-  left: 260px;
-  -webkit-transform: scale(3.5) rotate(20deg);
-      -ms-transform: scale(3.5) rotate(20deg);
-          transform: scale(3.5) rotate(20deg);
-}
-
-.backgrounds-icons__item_property_10 {
-  top: 70px;
-  left: 1600px;
-  -webkit-transform: scale(2.5) rotate(-20deg);
-      -ms-transform: scale(2.5) rotate(-20deg);
-          transform: scale(2.5) rotate(-20deg);
-}
-
-
 .backgrounds-icons__item_start_position {
   top: 50%;
   left: 50%;
@@ -437,7 +397,7 @@ button {
 
 .ability__article-list {
   margin-top: 87px;
-  margin-bottom: 90px;
+  margin-bottom: 92px;
 }
 
 .article-list {
@@ -456,17 +416,15 @@ button {
 }
 
 .ability-list__item {
+  width: 22%;
   padding-top: 90px;
   font-size: 20px;
   line-height: 30px;
   color: #8993ad;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 15%;
-          flex: 1 0 15%
 }
 
 .ability-list__item:not(:last-child) {
-  margin-right: 16px;
+  margin-right: 50px;
 }
 
 .ability-landing {
@@ -475,13 +433,12 @@ button {
 
 .ability-adaptive {
   background: url(../img/icons/ability_mob.png) center top no-repeat;
-  -webkit-box-flex: 2;
-      -ms-flex: 2 0 15%;
-          flex: 2 0 15%
+  width: 25%;
 }
 
 .ability-frontend {
   background: url(../img/icons/ability_programming.png) center top no-repeat;
+  width: 18%;
 }
 
 .ability-correction {
@@ -570,8 +527,8 @@ button {
 }
 
 .examples__btn {
-  margin-top: 95px;
-  padding: 20px 60px;
+  margin-top: 93px;
+  padding: 18px 62px;
 }
 
 .cost-service {
@@ -581,14 +538,15 @@ button {
 
 .main__cost-service {
   overflow: hidden;
-  position: relative;
 }
 
 .cost-service__container {
-  padding: 80px 100px;
+  position: relative;
+  padding: 75px 112px 80px 112px;
 }
 
 .cost-service__description {
+  margin-bottom: 30px;
   font-size: 45px;
   font-weight: 700;
   line-height: 60px;
@@ -596,17 +554,59 @@ button {
 }
 
 .cost-service__note {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   padding-right: 150px;
-  margin-left: 14px;
-  text-indent: -14px;
   font-size: 18px;
   line-height: 30px;
-  color: white;
-  opacity: .7;
+  color: #ffeeea;
 }
 
-.cost-service__symbol {
+.cost-service__note::before {
+  content: "*";
   font-size: 20px;
+  width: 20px;
+}
+
+.backgrounds-icons__item_property_6 {
+  top: 80px;
+  left: -233px;
+  -webkit-transform: scale(3) rotate(28deg);
+      -ms-transform: scale(3) rotate(28deg);
+          transform: scale(3) rotate(28deg);
+}
+
+.backgrounds-icons__item_property_7 {
+  top: 275px;
+  left: 1405px;
+  -webkit-transform: scale(3) rotate(-20deg);
+      -ms-transform: scale(3) rotate(-20deg);
+          transform: scale(3) rotate(-20deg);
+}
+
+.backgrounds-icons__item_property_8 {
+  top: 315px;
+  left: 1070px;
+  -webkit-transform: scale(2.3) rotate(20deg);
+      -ms-transform: scale(2.3) rotate(20deg);
+          transform: scale(2.3) rotate(20deg);
+}
+
+.backgrounds-icons__item_property_9 {
+  top: 273px;
+  left: -118px;
+  -webkit-transform: scale(3.5) rotate(18deg);
+      -ms-transform: scale(3.5) rotate(18deg);
+          transform: scale(3.5) rotate(18deg);
+}
+
+.backgrounds-icons__item_property_10 {
+  top: 90px;
+  left: 1300px;
+  -webkit-transform: scale(2.5) rotate(-20deg);
+      -ms-transform: scale(2.5) rotate(-20deg);
+          transform: scale(2.5) rotate(-20deg);
 }
 
 .main__modal {
@@ -712,7 +712,7 @@ button {
 
 .footer__top {
   background-color: white;
-  padding: 85px 0;
+  padding: 78px 0 70px 0;
 }
 
 .footer__container {
@@ -724,11 +724,12 @@ button {
 }
 
 .footer__left {
-  margin-right: auto;
+  padding-top: 4px;
+  margin-right: 300px;
 }
 
 .footer-left-column__item:not(:last-child) {
-  margin-bottom: 16px;
+  margin-bottom: 11px;
 }
 
 .footer-left-column__link {
@@ -763,17 +764,22 @@ button {
 }
 
 .footer__middle {
-  margin-right: auto;
+  padding-top: 4px;
+  margin-right: 212px;
 }
 
 .footer-middle-column__tel {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
-.footer-middle-column__tel-icon,
+.footer-middle-column__tel-icon {
+  line-height: 25px;
+  margin-right: 15px;
+}
+
 .footer-middle-column__mail-icon {
   line-height: 25px;
-  margin-right: 20px;
+  margin-right: 22px;
 }
 
 .footer-middle-column__tel-link,
@@ -807,6 +813,16 @@ button {
   background-color: #f53f4f;
 }
 
+.footer-right-column__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer-right-column__item:not(:last-child) {
+  margin-right: 15px;
+}
+
 .social-link {
   background: url(../img/icons/sprite_social.png) no-repeat;
   display: inline-block;
@@ -815,7 +831,7 @@ button {
 }
 
 .footer-right-column__vk-link {
-  background-position: 2px 2px;
+  background-position: 2px 4px;
 }
 
 .footer-right-column__fb-link {
@@ -823,11 +839,11 @@ button {
 }
 
 .footer-right-column__tw-link {
-  background-position: -115px 3px;
+  background-position: -115px 5px;
 }
 
 .footer-right-column__inst-link {
-  background-position: -172px 3px;
+  background-position: -172px 5px;
 }
 
 .footer__bottom {
