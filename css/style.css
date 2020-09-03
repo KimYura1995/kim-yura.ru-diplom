@@ -14,6 +14,16 @@
 
 @font-face {
   font-family: "Roboto";
+  src: url("../fonts/Roboto-Medium.woff2") format("woff2"),
+    url("../fonts/Roboto-Medium.woff") format("woff");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: "Roboto";
   src: url("../fonts/Roboto-Bold.woff2") format("woff2"),
     url("../fonts/Roboto-Bold.woff") format("woff");
   font-weight: 700;
@@ -78,37 +88,40 @@ button {
   color: transparent;
 }
 
+.visually-hidden {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	padding:0 !important;
+	border:0 !important;
+	height: 1px !important; 
+	width: 1px !important; 
+	overflow: hidden;
+}
+
 .container {
   max-width: 1170px;
   margin: 0 auto;
 }
 
 .header {
-  padding-top: 30px;
+  padding-top: 29px;
 }
 
 .header__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.header__right-block {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: auto;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .header__right-tel {
-  padding-bottom: 3px;
+  margin-left: auto;
   margin-right: 28px;
   font-size: 25px;
   font-weight: 700;
   color: black;
+  transform: translateY(-2px);
   -webkit-transition: color .3s;
   -o-transition: color .3s;
   transition: color .3s;
@@ -121,7 +134,7 @@ button {
 .header__btn {
   border: 1px solid #f53f4f;
   color: #f53f4f;
-  padding: 12px 40px;
+  padding: 13px 40px 11px 40px;
   -webkit-transition: color .3s,
               background-color .3s;
   -o-transition: color .3s,
@@ -159,7 +172,7 @@ button {
 }
 
 .menu-nav__item:not(:last-child) {
-  margin-right: 31px;
+  margin-right: 32px;
 }
 
 .header__btn-mob {
@@ -244,9 +257,11 @@ button {
 }
 
 .about-me {
+  max-width: 1920px;
+  margin: 0 auto;
   height: 693px;
   position: relative;
-  background: url(../img/contents/figure.svg) 1080px 60px no-repeat;
+  background: url(../img/contents/figure.svg) 111% 65px no-repeat;
   overflow: hidden;
   -webkit-transition: background-position 1s;
   -o-transition: background-position 1s;
@@ -275,7 +290,7 @@ button {
 }
 
 .about-me__name {
-  margin-bottom: 15px;
+  margin-bottom: 14px;
   font-size: 80px;
   font-weight: 900;
 }
@@ -287,7 +302,7 @@ button {
 }
 
 .about-me__btn {
-  padding: 18px 70px;
+  padding: 19px 70px 17px 70px;
 }
 
 .about-me__img {
@@ -295,8 +310,8 @@ button {
       align-self: flex-end;
   height: 629px;
   margin-left: auto;
-  -webkit-filter: drop-shadow(5px 0 10px rgba(0, 0, 0, .2));
-          filter: drop-shadow(5px 0 10px rgba(0, 0, 0, .2));
+  -webkit-filter: drop-shadow(5px 0 30px rgba(0, 0, 0, .2));
+          filter: drop-shadow(5px 0 30px rgba(0, 0, 0, .2));
   -webkit-transition: transform .5s linear;
   -o-transition: transform .5s linear;
   -webkit-transition: -webkit-transform .5s linear;
@@ -386,7 +401,7 @@ button {
 .main__ability {
   position: relative;
   padding-top: 88px;
-  padding-bottom: 100px;
+  padding-bottom: 102px;
   text-align: center;
   background-color: white;
 }
@@ -417,7 +432,7 @@ button {
 
 .ability-list__item {
   width: 22%;
-  padding-top: 90px;
+  padding-top: 92px;
   font-size: 20px;
   line-height: 30px;
   color: #8993ad;
@@ -446,7 +461,7 @@ button {
 }
 
 .ability__btn {
-  padding: 18px 59px;
+  padding: 19px 58px 17px 58px;
 }
 
 .main__examples {
@@ -454,18 +469,18 @@ button {
 }
 
 .examples {
-  padding-top: 95px;
-  padding-bottom: 100px;
+  padding-top: 90px;
+  padding-bottom: 102px;
   background-color: #fbfbfb;
 }
 
 .examples__title {
-  margin-bottom: 95px;
+  margin-bottom: 100px;
 }
 
 .slider-btn {
   position: absolute;
-  top: 115px;
+  top: 119px;
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -486,11 +501,11 @@ button {
 }
 
 .slider-btn-prev {
-  left: -20px;
+  left: -30px;
 }
 
 .slider-btn-next {
-  right: -20px;
+  right: -30px;
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);
@@ -500,16 +515,21 @@ button {
   outline: none
 }
 
+.slick-slide {
+   margin: 0 15px;
+   width: 370px;
+}
+    
 .slider-examples__img {
-  max-width: 100%;
-  margin: 0 auto;
+  width: 100%;
 }
 
 .slider-examples__name {
   font-size: 20px;
-  margin-top: 40px;
+  margin-top: 34px;
   text-align: center;
   color: #8993ad;
+  font-weight: 500;
 }
 
 .slick-dots {
@@ -527,7 +547,7 @@ button {
 }
 
 .examples__btn {
-  margin-top: 93px;
+  margin-top: 95px;
   padding: 18px 62px;
 }
 
@@ -542,7 +562,7 @@ button {
 
 .cost-service__container {
   position: relative;
-  padding: 75px 112px 80px 112px;
+  padding: 75px 110px 79px 114px;
 }
 
 .cost-service__description {
@@ -566,7 +586,8 @@ button {
 .cost-service__note::before {
   content: "*";
   font-size: 20px;
-  width: 20px;
+  line-height: 26px;
+  width: 18px;
 }
 
 .backgrounds-icons__item_property_6 {
@@ -719,13 +740,13 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .footer__left {
   padding-top: 4px;
-  margin-right: 300px;
+  margin-right: 305px;
 }
 
 .footer-left-column__item:not(:last-child) {
@@ -773,13 +794,13 @@ button {
 }
 
 .footer-middle-column__tel-icon {
-  line-height: 25px;
-  margin-right: 15px;
+  font-size: 18px;
+  margin-right: 13px;
 }
 
 .footer-middle-column__mail-icon {
-  line-height: 25px;
-  margin-right: 22px;
+  font-size: 20px;
+  margin-right: 18px;
 }
 
 .footer-middle-column__tel-link,
@@ -831,19 +852,19 @@ button {
 }
 
 .footer-right-column__vk-link {
-  background-position: 2px 4px;
+  background-position: 0px 5px;
 }
 
 .footer-right-column__fb-link {
-  background-position: -55px 5px;
+  background-position: -56px 5px;
 }
 
 .footer-right-column__tw-link {
-  background-position: -115px 5px;
+  background-position: -118px 5px;
 }
 
 .footer-right-column__inst-link {
-  background-position: -172px 5px;
+  background-position: -175px 5px;
 }
 
 .footer__bottom {

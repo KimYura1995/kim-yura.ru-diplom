@@ -55,8 +55,9 @@ $(function() {
   });
 
   $('.slider-example').slick({
-    autoplay: true,
+    autoplay: false,
     infinite: true,
+    variableWidth: true,
     speed: 300,
     slidesToShow: 3,
     slidesToScroll: 1,
