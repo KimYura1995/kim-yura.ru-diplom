@@ -65,10 +65,21 @@ $(function() {
     nextArrow: '<button class="slider-btn slider-btn-next" type="button" aria-label="Слайдер вправо"></button>',
     responsive: [
       {
-        breakpoint: 1200,
+        breakpoint: 1281,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
+          variableWidth: false,
+          dots: true,
+          arrows: false
+        }
+      },
+      {
+        breakpoint: 1025,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          variableWidth: true,
           dots: true,
           arrows: false
         }
