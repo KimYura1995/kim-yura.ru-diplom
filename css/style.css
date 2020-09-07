@@ -265,7 +265,8 @@ button {
   margin: 0 auto;
   height: 693px;
   position: relative;
-  background: url(../img/contents/figure.svg) 111% 65px no-repeat;
+  background: url(../img/contents/figure.svg) right -21% bottom 194% no-repeat;
+  background-size: 55% 110%;
   overflow: hidden;
   -webkit-transition: background-position 1s;
   -o-transition: background-position 1s;
@@ -330,6 +331,7 @@ button {
 
 .about-me__backgrounds-icons {
   position: absolute;
+  width: 100%;
   top: 0;
   left: 0;
   z-index: 1;
@@ -354,7 +356,7 @@ button {
 
 .backgrounds-icons__item_property_1 {
   top: 78px;
-  left: -230px;
+  left: 7.2%;
   -webkit-transform: scale(3) rotate(30deg);
       -ms-transform: scale(3) rotate(30deg);
           transform: scale(3) rotate(30deg);
@@ -362,7 +364,7 @@ button {
 
 .backgrounds-icons__item_property_2 {
   top: 97px;
-  left: 428px;
+  left: 41.8%;
   -webkit-transform: scale(1.8) rotate(-13deg);
       -ms-transform: scale(1.8) rotate(-13deg);
           transform: scale(1.8) rotate(-13deg);
@@ -370,19 +372,19 @@ button {
 
 .backgrounds-icons__item_property_3 {
   top: 476px;
-  left: 600px;
+  left: 50.8%;
   -webkit-transform: scale(2.4) rotate(18deg);
       -ms-transform: scale(2.4) rotate(18deg);
           transform: scale(2.4) rotate(18deg);
 }
 
 .backgrounds-icons__item_property_3_1 {
-  display: none;
+  opacity: 0;
 }
 
 .backgrounds-icons__item_property_4 {
   top: 310px;
-  left: -118px;
+  left: 13.2%;
   -webkit-transform: scale(3.5) rotate(18deg);
       -ms-transform: scale(3.5) rotate(18deg);
           transform: scale(3.5) rotate(18deg);
@@ -390,7 +392,7 @@ button {
 
 .backgrounds-icons__item_property_5 {
   top: 606px;
-  left: 20px;
+  left: 20.3%;
   -webkit-transform: scale(2.5) rotate(-22deg);
       -ms-transform: scale(2.5) rotate(-22deg);
           transform: scale(2.5) rotate(-22deg);
@@ -401,8 +403,8 @@ button {
 }
 
 .backgrounds-icons__item_start_position {
-  top: 50%;
-  left: 50%;
+  top: 0;
+  left: 0;
   opacity: 0;
 }
 
@@ -568,11 +570,11 @@ button {
 }
 
 .main__cost-service {
+  position: relative;
   overflow: hidden;
 }
 
 .cost-service__container {
-  position: relative;
   padding: 75px 110px 79px 114px;
 }
 
@@ -603,7 +605,7 @@ button {
 
 .backgrounds-icons__item_property_6 {
   top: 80px;
-  left: -233px;
+  left: 7.1%;
   -webkit-transform: scale(3) rotate(28deg);
       -ms-transform: scale(3) rotate(28deg);
           transform: scale(3) rotate(28deg);
@@ -611,7 +613,7 @@ button {
 
 .backgrounds-icons__item_property_7 {
   top: 275px;
-  left: 1405px;
+  left: 93.2%;
   -webkit-transform: scale(3) rotate(-20deg);
       -ms-transform: scale(3) rotate(-20deg);
           transform: scale(3) rotate(-20deg);
@@ -619,7 +621,7 @@ button {
 
 .backgrounds-icons__item_property_8 {
   top: 315px;
-  left: 1070px;
+  left: 75.7%;
   -webkit-transform: scale(2.3) rotate(20deg);
       -ms-transform: scale(2.3) rotate(20deg);
           transform: scale(2.3) rotate(20deg);
@@ -627,7 +629,7 @@ button {
 
 .backgrounds-icons__item_property_9 {
   top: 273px;
-  left: -118px;
+  left: 13.2%;
   -webkit-transform: scale(3.5) rotate(18deg);
       -ms-transform: scale(3.5) rotate(18deg);
           transform: scale(3.5) rotate(18deg);
@@ -635,7 +637,7 @@ button {
 
 .backgrounds-icons__item_property_10 {
   top: 90px;
-  left: 1300px;
+  left: 87.5%;
   -webkit-transform: scale(2.5) rotate(-20deg);
       -ms-transform: scale(2.5) rotate(-20deg);
           transform: scale(2.5) rotate(-20deg);
@@ -923,6 +925,72 @@ button {
             transform: translateX(0);
   }
 
+  
+  .backgrounds-icons__item_property_1 {
+    top: 99px;
+    left: 8.4%;
+  }
+
+  .backgrounds-icons__item_property_2 {
+    top: 81px;
+    left: 89%;
+  }
+
+  .backgrounds-icons__item_property_3 {
+    opacity: 0;
+  }
+
+  .backgrounds-icons__item_property_3_1 {
+    opacity: 1;
+    top: 173px;
+    left: 43.2%;
+    -webkit-transform: scale(2.9) rotate(15deg);
+        -ms-transform: scale(2.9) rotate(15deg);
+            transform: scale(2.9) rotate(15deg);
+  }
+
+  .backgrounds-icons__item_property_4 {
+    top: 577px;
+    left: 6.2%;
+  }
+
+  .backgrounds-icons__item_property_5 {
+    top: 521px;
+    left: 36.6%;
+  }
+
+  .backgrounds-icons__item_property_6 {
+    top: 30px;
+    left: 15.3%;
+    -webkit-transform: scale(2) rotate(27deg);
+        -ms-transform: scale(2) rotate(27deg);
+            transform: scale(2) rotate(27deg);
+  }
+
+  .backgrounds-icons__item_property_7 {
+    opacity: 0;
+  }
+
+  .backgrounds-icons__item_property_8 {
+    top: 309px;
+    left: 51%;
+    -webkit-transform: scale(1.5) rotate(20deg);
+        -ms-transform: scale(1.5) rotate(20deg);
+            transform: scale(1.5) rotate(20deg);
+  }
+
+  .backgrounds-icons__item_property_9 {
+    opacity: 0;
+  }
+
+  .backgrounds-icons__item_property_10 {
+    top: 298px;
+    left: 87.8%;
+    -webkit-transform: scale(2.5) rotate(-20deg);
+        -ms-transform: scale(2.5) rotate(-20deg);
+            transform: scale(2.5) rotate(-20deg);
+  }
+
   .article-list {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -974,7 +1042,9 @@ button {
 
 @media (max-width: 1024px) {
   .container {
-    max-width: 1024px;
+    width: 944px;
+    padding-right: 0;
+    padding-left: 0;
   }
 
   .menu-nav__btn {
@@ -983,71 +1053,6 @@ button {
 
   .menu-nav__list {
     display: none;
-  }
-
-  .backgrounds-icons__item_property_1 {
-    top: 99px;
-    left: 93px;
-  }
-
-  .backgrounds-icons__item_property_2 {
-    top: 81px;
-    left: 903px;
-  }
-
-  .backgrounds-icons__item_property_3 {
-    display: none;
-  }
-
-  .backgrounds-icons__item_property_3_1 {
-    display: block;
-    top: 173px;
-    left: 444px;
-    -webkit-transform: scale(2.9) rotate(15deg);
-        -ms-transform: scale(2.9) rotate(15deg);
-            transform: scale(2.9) rotate(15deg);
-  }
-
-  .backgrounds-icons__item_property_4 {
-    top: 577px;
-    left: 70px;
-  }
-
-  .backgrounds-icons__item_property_5 {
-    top: 521px;
-    left: 376px;
-  }
-
-  .backgrounds-icons__item_property_6 {
-    top: 30px;
-    left: 163px;
-    -webkit-transform: scale(2) rotate(27deg);
-        -ms-transform: scale(2) rotate(27deg);
-            transform: scale(2) rotate(27deg);
-  }
-
-  .backgrounds-icons__item_property_7 {
-    display: none;
-  }
-
-  .backgrounds-icons__item_property_8 {
-    top: 309px;
-    left: 522px;
-    -webkit-transform: scale(1.5) rotate(20deg);
-        -ms-transform: scale(1.5) rotate(20deg);
-            transform: scale(1.5) rotate(20deg);
-  }
-
-  .backgrounds-icons__item_property_9 {
-    display: none;
-  }
-
-  .backgrounds-icons__item_property_10 {
-    top: 298px;
-    left: 890px;
-    -webkit-transform: scale(2.5) rotate(-20deg);
-        -ms-transform: scale(2.5) rotate(-20deg);
-            transform: scale(2.5) rotate(-20deg);
   }
 
   .main__ability {
