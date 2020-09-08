@@ -40,11 +40,8 @@
   font-style: normal;
 }
 
-html,
-body {
+html {
   scroll-behavior: smooth;
-  margin: 0;
-  padding: 0;
   font-family: "Roboto", sans-serif;
   background-color: #fbfbfb;
 }
@@ -105,7 +102,7 @@ button {
 }
 
 .header {
-  padding-top: 29px;
+  padding-top: 30px;
 }
 
 .header__container {
@@ -138,7 +135,7 @@ button {
 .header__btn {
   border: 1px solid #f53f4f;
   color: #f53f4f;
-  padding: 13px 40px 11px 40px;
+  padding: 14px 39px 11px 40px;
   -webkit-transition: color .3s,
               background-color .3s;
   -o-transition: color .3s,
@@ -288,20 +285,20 @@ button {
 
 .about-me__info {
   position: relative;
-  -webkit-transform: translateY(-12px);
-      -ms-transform: translateY(-12px);
-          transform: translateY(-12px);
+  -webkit-transform: translateY(-13px);
+      -ms-transform: translateY(-13px);
+          transform: translateY(-13px);
   z-index: 2;
 }
 
 .about-me__name {
-  margin-bottom: 14px;
+  margin-bottom: 18px;
   font-size: 80px;
   font-weight: 900;
 }
 
 .about-me__professions {
-  margin-bottom: 45px;
+  margin-bottom: 46px;
   font-size: 25px;
   color: #8993ad;
 }
@@ -410,7 +407,7 @@ button {
 
 .main__ability {
   position: relative;
-  padding-top: 88px;
+  padding-top: 91px;
   padding-bottom: 102px;
   text-align: center;
   background-color: white;
@@ -482,13 +479,13 @@ button {
 }
 
 .examples {
-  padding-top: 90px;
-  padding-bottom: 102px;
+  padding-top: 93px;
+  padding-bottom: 104px;
   background-color: #fbfbfb;
 }
 
 .examples__title {
-  margin-bottom: 100px;
+  margin-bottom: 102px;
 }
 
 .slider-btn {
@@ -746,7 +743,7 @@ button {
 
 .footer__top {
   background-color: white;
-  padding: 78px 0 70px 0;
+  padding: 79px 0 70px 0;
 }
 
 .footer__container {
@@ -763,7 +760,7 @@ button {
 }
 
 .footer-left-column__item:not(:last-child) {
-  margin-bottom: 11px;
+  margin-bottom: 14px;
 }
 
 .footer-left-column__link {
@@ -803,7 +800,7 @@ button {
 }
 
 .footer-middle-column__tel {
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 }
 
 .footer-middle-column__tel-icon {
@@ -901,13 +898,13 @@ button {
   }
 
   .about-me {
-    background: url(../img/contents/figure_1024.svg) 478px 170px no-repeat;
+    background: url(../img/contents/figure_1024.svg) 466px 170px no-repeat;
   }
   
   .about-me__info {
-    -webkit-transform: translateY(4px);
-        -ms-transform: translateY(4px);
-            transform: translateY(4px);
+    -webkit-transform: translateY(5px);
+        -ms-transform: translateY(5px);
+            transform: translateY(5px);
   }
 
   .about-me__name {
@@ -1017,9 +1014,13 @@ button {
     padding: 23px 83px 21px 83px;
   }
 
+  .examples {
+    padding-bottom: 102px;
+  }
+
   .examples__btn {
     margin-top: 189px;
-    padding: 22px 89px;
+    padding: 24px 89px;
   }
 
   .slider-examples__name {
@@ -1042,9 +1043,8 @@ button {
 
 @media (max-width: 1024px) {
   .container {
-    width: 944px;
-    padding-right: 0;
-    padding-left: 0;
+    padding-right: 31px;
+    padding-left: 31px;
   }
 
   .menu-nav__btn {
@@ -1056,7 +1056,7 @@ button {
   }
 
   .main__ability {
-    padding-top: 87px;
+    padding-top: 88px;
     padding-bottom: 105px;
   }
 
@@ -1064,6 +1064,7 @@ button {
     -webkit-transform: translateX(-14px);
         -ms-transform: translateX(-14px);
             transform: translateX(-14px);
+    margin-bottom: 89px;
   }
 
   .article-container {
