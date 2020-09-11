@@ -17,57 +17,57 @@
   <body>
     <header class="header">
       <div class="container header__container">
-        <button class="menu-nav__btn" id="nav-btn" type="button" aria-label="Навигация сайта"></button>
+        <button class="header__toggle" id="nav-btn" type="button" aria-label="Навигация сайта"></button>
         <nav class="menu-nav">
           <ul class="menu-nav__list">
-            <li class="menu-item menu-nav__item">
-              <a class="menu-item__link" href="#ability">Услуги</a>
+            <li class="menu-nav__item">
+              <a class="nav-link" href="#ability">Услуги</a>
             </li>
-            <li class="menu-item menu-nav__item">
-              <a class="menu-item__link" href="#examples">Портфолио</a>
+            <li class="menu-nav__item">
+              <a class="nav-link" href="#examples">Портфолио</a>
             </li>
-            <li class="menu-item menu-nav__item">
-              <a class="menu-item__link" href="#cost">Стоимость</a>
+            <li class="menu-nav__item">
+              <a class="nav-link" href="#cost">Стоимость</a>
             </li>
           </ul>
         </nav>
         <a class="header__right-tel" href="tel:+74999957755">+7 (499) 995-55-77</a>
-        <button class="header__btn form-call" type="button">Заказать звонок</button>
-        <button class="header__btn-mob form-call" type="button" aria-label="Заказать звонок"><i class="fas fa-phone fa-xs fa-flip-horizontal header__btn-phone"></i></button>
+        <button class="header__btn" type="button">Заказать звонок</button>
+        <button class="header__btn-mob" type="button" aria-label="Заказать звонок"><i class="fas fa-phone fa-xs fa-flip-horizontal header__btn-phone"></i></button>
       </div>
-      <nav class="menu-nav-mob header__menu-nav-mob container" id="nav-list-mob">
+      <nav class="container menu-nav-mob" id="nav-list-mob">
         <ul class="menu-nav-mob__list">
-          <li class="menu-item menu-nav-mob__item">
-            <a class="menu-item__link" href="#ability">Услуги</a>
+          <li class="menu-nav-mob__item">
+            <a class="nav-link" href="#ability">Услуги</a>
           </li>
-          <li class="menu-item menu-nav-mob__item">
-            <a class="menu-item__link" href="#examples">Портфолио</a>
+          <li class="menu-nav-mob__item">
+            <a class="nav-link" href="#examples">Портфолио</a>
           </li>
-          <li class="menu-item menu-nav-mob__item">
-            <a class="menu-item__link" href="#cost">Стоимость</a>
+          <li class="menu-nav-mob__item">
+            <a class="nav-link" href="#cost">Стоимость</a>
           </li>
         </ul>
       </nav>
     </header>
     <main class="main">
       <section class="about-me">
-        <div class="about-me__container container container-mob">
+        <div class="container about-me__container">
           <div class="about-me__info">
             <h1 class="about-me__name">Дмитрий Алексеев</h1>
             <p class="about-me__professions">
               Frontend-разработчик и веб-верстальщик
             </p>
-            <a class="about-me__btn btn-color-orange" href="#ability" aria-label="Узнать больше обо мне">Узнать больше</a>
+            <a class="btn-main about-me__btn" href="#ability" aria-label="Узнать больше обо мне">Узнать больше</a>
           </div>
           <img class="about-me__img" src="img/contents/photo.png" alt="Моя фотография">
         </div>
         <div class="backgrounds-icons about-me__backgrounds-icons">
-          <div class="backgrounds-icons__item backgrounds-icons__item_color_gradient backgrounds-icons__item_start_position backgrounds-icons__item_property_1">{&nbsp;}</div>
-          <div class="backgrounds-icons__item backgrounds-icons__item_color_gradient backgrounds-icons__item_start_position backgrounds-icons__item_property_2">&lt;div&gt;</div>
-          <div class="backgrounds-icons__item backgrounds-icons__item_color_gradient backgrounds-icons__item_start_position backgrounds-icons__item_property_3">&lt;div&gt;</div>
-          <div class="backgrounds-icons__item backgrounds-icons__item_color_gradient backgrounds-icons__item_start_position backgrounds-icons__item_property_3_1">&lt;/&gt;</div>
-          <div class="backgrounds-icons__item backgrounds-icons__item_color_gradient backgrounds-icons__item_start_position backgrounds-icons__item_property_4">#</div>
-          <div class="backgrounds-icons__item backgrounds-icons__item_color_gradient backgrounds-icons__item_start_position backgrounds-icons__item_property_5">&lt;/&gt;</div>
+          <div class="backgrounds-icons__item backgrounds-icons__item_color-gradient backgrounds-icons__item_start-position backgrounds-icons__item_property-1">{&nbsp;}</div>
+          <div class="backgrounds-icons__item backgrounds-icons__item_color-gradient backgrounds-icons__item_start-position backgrounds-icons__item_property-2">&lt;div&gt;</div>
+          <div class="backgrounds-icons__item backgrounds-icons__item_color-gradient backgrounds-icons__item_start-position backgrounds-icons__item_property-3">&lt;div&gt;</div>
+          <div class="backgrounds-icons__item backgrounds-icons__item_color-gradient backgrounds-icons__item_start-position backgrounds-icons__item_property-3-1">&lt;/&gt;</div>
+          <div class="backgrounds-icons__item backgrounds-icons__item_color-gradient backgrounds-icons__item_start-position backgrounds-icons__item_property-4">#</div>
+          <div class="backgrounds-icons__item backgrounds-icons__item_color-gradient backgrounds-icons__item_start-position backgrounds-icons__item_property-5">&lt;/&gt;</div>
         </div>
       </section>
       <section class="ability main__ability" id="ability">
@@ -75,21 +75,21 @@
           Что я делаю
         </h2>
         <div class="container">
-          <ul class="article-list ability__article-list">
-            <li class="ability-list__item ability-landing">
+          <ul class="ability__list">
+            <li class="ability-landing ability__item">
                 Вёрстка лендинг–страниц и&nbsp;сайтов любой сложности
             </li>
-            <li class="ability-list__item ability-adaptive">
+            <li class="ability-adaptive ability__item">
                 Адаптивная вёрстка под все браузеры и устройства
             </li>
-            <li class="ability-list__item ability-frontend">
+            <li class="ability-frontend ability__item">
                 Frontend–разработка и&nbsp;программирование
             </li>
-            <li class="ability-list__item ability-correction">
+            <li class="ability-correction ability__item">
                 Исправление и доработка существующей вёрстки
             </li>
           </ul>
-          <button class="ability__btn btn-color-orange form-call" type="button">Узнать стоимость</button>
+          <button class="btn-main ability__btn" type="button">Узнать стоимость</button>
         </div>
       </section>
       <section class="examples main__examples" id="examples">
@@ -97,25 +97,25 @@
           Примеры моих работ
         </h2>
         <div class="container">
-          <div class="slider-example examples__slider-example">
-            <figure class="slider-examples__item">
-              <img class="slider-examples__img" src="img/contents/example_1.jpg" alt="Сайт психолога Веры Антоновой">
-              <figcaption class="slider-examples__name">Сайт психолога Веры Антоновой</figcaption>
+          <div class="examples__slider">
+            <figure class="examples__item">
+              <img class="examples__img" src="img/contents/example_1.jpg" alt="Сайт психолога Веры Антоновой">
+              <figcaption class="examples__name">Сайт психолога Веры Антоновой</figcaption>
             </figure>
-            <figure class="slider-examples__item">
-              <img class="slider-examples__img" src="img/contents/example_2.jpg" alt="Сайт магазина детской одежды">
-              <figcaption class="slider-examples__name">Сайт магазина детской одежды</figcaption>
+            <figure class="examples__item">
+              <img class="examples__img" src="img/contents/example_2.jpg" alt="Сайт магазина детской одежды">
+              <figcaption class="examples__name">Сайт магазина детской одежды</figcaption>
             </figure>
-            <figure class="slider-examples__item">
-              <img class="slider-examples__img" src="img/contents/example_3.jpg" alt="Сайт магазина Рыболов">
-              <figcaption class="slider-examples__name">Сайт магазина «Рыболов»</figcaption>
+            <figure class="examples__item">
+              <img class="examples__img" src="img/contents/example_3.jpg" alt="Сайт магазина Рыболов">
+              <figcaption class="examples__name">Сайт магазина «Рыболов»</figcaption>
             </figure>
-            <figure class="slider-examples__item">
-              <img class="slider-examples__img" src="img/contents/example_4.jpg" alt="Сайт новостного агенства">
-              <figcaption class="slider-examples__name">Сайт новостного агенства</figcaption>
+            <figure class="examples__item">
+              <img class="examples__img" src="img/contents/example_4.jpg" alt="Сайт новостного агенства">
+              <figcaption class="examples__name">Сайт новостного агенства</figcaption>
             </figure>
           </div>
-          <button class="examples__btn btn-color-orange form-call" type="button">Заказать проект</button>
+          <button class="btn-main examples__btn" type="button">Заказать проект</button>
         </div> 
       </section>
       <section class="cost-service main__cost-service" id="cost">
@@ -128,12 +128,12 @@
             Срок и стоимость могут отличаться от заявленных и рассчитываются&nbsp;&nbsp;индивидуально, в&nbsp;зависимости от&nbsp;сложности задач.
           </p>
         </div>
-        <div class="backgrounds-icons about-me__backgrounds-icons">
-          <div class="backgrounds-icons__item backgrounds-icons__item_color_white backgrounds-icons__item_start_position backgrounds-icons__item_property_6">{&nbsp;}</div>
-          <div class="backgrounds-icons__item backgrounds-icons__item_color_white backgrounds-icons__item_start_position backgrounds-icons__item_property_7">{&nbsp;}</div>
-          <div class="backgrounds-icons__item backgrounds-icons__item_color_white backgrounds-icons__item_start_position backgrounds-icons__item_property_8">&lt;div&gt;</div>
-          <div class="backgrounds-icons__item backgrounds-icons__item_color_white backgrounds-icons__item_start_position backgrounds-icons__item_property_9">#</div>
-          <div class="backgrounds-icons__item backgrounds-icons__item_color_white backgrounds-icons__item_start_position backgrounds-icons__item_property_10">&lt;/&gt;</div>
+        <div class="backgrounds-icons cost-service__backgrounds-icons">
+          <div class="backgrounds-icons__item backgrounds-icons__item_color-white backgrounds-icons__item_start-position backgrounds-icons__item_property-6">{&nbsp;}</div>
+          <div class="backgrounds-icons__item backgrounds-icons__item_color-white backgrounds-icons__item_start-position backgrounds-icons__item_property-7">{&nbsp;}</div>
+          <div class="backgrounds-icons__item backgrounds-icons__item_color-white backgrounds-icons__item_start-position backgrounds-icons__item_property-8">&lt;div&gt;</div>
+          <div class="backgrounds-icons__item backgrounds-icons__item_color-white backgrounds-icons__item_start-position backgrounds-icons__item_property-9">#</div>
+          <div class="backgrounds-icons__item backgrounds-icons__item_color-white backgrounds-icons__item_start-position backgrounds-icons__item_property-10">&lt;/&gt;</div>
         </div>
       </section>
       <div class="modal main__modal" id="modal-form">
@@ -149,7 +149,7 @@
               <input class="modal__input" type="text" placeholder="Ваше имя *" required>
               <input class="modal__input" type="email" placeholder="E-mail *" required>
               <input class="modal__input" type="tel" placeholder="Ваш телефон *" required>
-              <button class="modal__btn-submit btn-color-orange" type="submit">Отправить</button>
+              <button class="btn-main modal__btn-submit" type="submit">Отправить</button>
               <div class="modal__note">
                 Поля отмеченные "*" обязательны для заполнения
               </div>
@@ -160,7 +160,7 @@
     </main>
     <footer class="footer">
       <div class="footer__top">
-        <div class="footer__container container">
+        <div class="container footer__container">
           <nav class="footer-left-column footer__left">
             <ul class="footer-left-column__list">
               <li class="footer-left-column__item">
@@ -189,7 +189,7 @@
             </li>
           </ul>
           <div class="footer-right-column footer__right">
-            <button class="footer-right-column__btn form-call" type="button">Заказать звонок</button>
+            <button class="footer-right-column__btn" type="button">Заказать звонок</button>
             <ul class="footer-right-column__social">
               <li class="footer-right-column__item">
                 <a class="social-link footer-right-column__vk-link" href="#" aria-label="VK Messanger"></a>

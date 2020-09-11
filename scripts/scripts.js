@@ -1,5 +1,5 @@
 $(window).on('load', function () {
-  $('.backgrounds-icons__item').removeClass('backgrounds-icons__item_start_position');
+  $('.backgrounds-icons__item').removeClass('backgrounds-icons__item_start-position');
 });
 
 $(function() {
@@ -13,7 +13,7 @@ $(function() {
     };
   });
 
-  $('.form-call').on('click', function() {
+  $('.header__btn, .ability__btn, .examples__btn, .footer-right-column__btn, .header__btn-mob').on('click', function() {
     scrollLock.disablePageScroll();
     $('#modal-form').css(
       {
@@ -54,7 +54,7 @@ $(function() {
     }
   });
 
-  $('.slider-example').slick({
+  $('.examples__slider').slick({
     autoplay: false,
     infinite: true,
     variableWidth: true,
